@@ -523,7 +523,10 @@ def main():
     print("-------------Lexical Analyzer Start-------------")
     dfa = LexicalAnalyzer()
     dfa.SetTransitionTable(DFA)
-    inputString = list("a-1")
+    inputString = raw_input("Enter inputString : ")
+    print("Input : {}".format(inputString))
+    inputString = list(inputString)
+    print("Output : ", end='')
     stringBucket = []
     tokenList = []
     while len(inputString) != 0:
